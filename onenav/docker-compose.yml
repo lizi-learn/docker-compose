@@ -1,0 +1,11 @@
+services:
+    onenav:
+        stdin_open: true
+        tty: true
+        container_name: onenav
+        ports:
+            - 3080:80
+        volumes:
+            - ./data:/data/wwwroot/default/data
+        restart: always
+        image: helloz/onenav
