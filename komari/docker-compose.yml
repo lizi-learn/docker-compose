@@ -1,0 +1,8 @@
+services:
+    komari:
+        ports:
+            - 25774:25774
+        volumes:
+            - ./data:/app/data
+        container_name: komari
+        image: ghcr.io/komari-monitor/komari:latest
